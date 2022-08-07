@@ -1,0 +1,21 @@
+/******************************************************************************
+
+           47)Imprima somente os números primos existentes na faixa de um 1 até 100
+
+*******************************************************************************/
+public class Ex47{
+	public static void main(String[] args) {
+	    int primo=0;
+    	for(int c=1;c<=100;c++){
+    	    primo=0;
+    	    for(int i=1;i<=c;i++){
+    	        if(c%i==0){
+    	            primo++;
+    	        }
+    	    }
+    	    if(primo==2){
+    	        System.out.println(c);
+    	    }
+    	}
+	}
+}
